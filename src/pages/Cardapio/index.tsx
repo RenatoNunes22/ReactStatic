@@ -1,11 +1,17 @@
 import styles from "./Cardapio.module.scss";
+import { ReactComponent as Logo } from "../../assets/logo.svg";
 
 export default function Cardapio() {
   return (
     <main>
       <nav className={styles.menu}>
-        <img src="../../assets/logo.svg" alt="logo do aluroni" />
+        <Logo />
       </nav>
+      <header className={styles.header}>
+        <div className={styles.header__text /*Padrão BEM*/}>
+          A casa do código e da massa
+        </div>
+      </header>
     </main>
   );
 }
